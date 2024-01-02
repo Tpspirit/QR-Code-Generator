@@ -12,3 +12,8 @@ const qrFunc = () => {
 };
 
 document.querySelector(".btn").addEventListener("click", qrFunc);
+document.querySelector(".input_text").addEventListener("keydown", function (e) {
+  if (e.key == "Enter") {
+    qrFunc();
+  }
+});
