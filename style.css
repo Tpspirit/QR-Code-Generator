@@ -11,6 +11,7 @@ body {
 .container {
   margin: 0 auto;
   width: 30%;
+  min-width: 200px;
   position: relative;
   top: 20vh;
   display: flex;
@@ -72,4 +73,24 @@ h1 {
   display: flex;
   justify-content: center;
   padding: 40px;
+}
+
+@media screen and (max-width: 500px) {
+  h1,
+  .input_text {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+    width: 70px;
+  }
+
+  .img {
+    transform: scale(0.6);
+  }
+
+  .result {
+    padding: 10px;
+  }
 }
